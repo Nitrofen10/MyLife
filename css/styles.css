@@ -1,7 +1,54 @@
 body {
     background-color: #efefef;
+    margin: 0px
 }
-nav {
+.body-container {
+    display: flex;
+}
+.sidebar-nav {
     width: 33%;
-    background-color: blue;
+    background-color: grey;
+    height: 100vh;
+}
+.sidebar-header {
+    position: relative;
+    min-height: 260px;
+}
+.headshot-image {
+    text-align: center;
+    width: 100%;
+    background-image: url("/images/headshotBackground.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 260px;
+}
+.headshot {
+    border-radius: 50%;
+    width: 160px;
+    padding-top: 25px;
+    height:auto;
+}
+.my-name {
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    padding-top: 20px;
+}
+.nav-links {
+    list-style: none;  
+}
+.nav-links .nav-link {
+    list-style: none;
+    padding: 20px;
+    text-decoration: none;
+    color: #f7f7f7;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.nav-links .nav-link li {
+    list-style: none;  
+}
+.content-container {
+    padding: 20px 40px;
 }
