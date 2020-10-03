@@ -7,7 +7,7 @@ body {
 }
 .sidebar-nav {
     width: 33%;
-    background-color: grey;
+    background-color: #053D23;
     height: 100vh;
 }
 .sidebar-header {
@@ -36,7 +36,9 @@ body {
     padding-top: 20px;
 }
 .nav-links {
-    list-style: none;  
+    list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 .nav-links .nav-link {
     list-style: none;
@@ -45,10 +47,52 @@ body {
     color: #f7f7f7;
     font-family: sans-serif;
     font-weight: 600;
+    position:relative;
+    text-decoration:none;
+    display:inline-block;
+    max-width: 130px;
+    width: 130px;
 }
+.nav-links .nav-link:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px gold;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    transform-origin:100% 50%
+  }
+  .nav-links .nav-link:hover:after { 
+    transform: scaleX(1);
+    transform-origin:0 50%;
+  }
 .nav-links .nav-link li {
-    list-style: none;  
+    list-style: none;
+    max-width: 130px;
+    width: 130px; 
 }
 .content-container {
     padding: 20px 40px;
+    width: 100%;
+    background-color: #fff;
+}
+.page-title {
+    color: #053D;
+    background-color: #fff;
+    width: 100%;
+    font-family: monospace;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-size: 40px;
+    border-bottom: 5px solid gold;
+}
+.intro {
+    font-size: 20px;
+    font-family: cursive;
+    font-family: system-ui;
+}
+.self-photo-container {
+    text-align: center;
+}
+.self-photo {
+    
 }
