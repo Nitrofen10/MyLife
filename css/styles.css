@@ -92,7 +92,10 @@ body {
 }
 .self-photo-container {
     text-align: center;
+    width: 50%;
+    margin: auto;
 }
 .self-photo {
-    
+    width: 50%;
+    margin: auto;
 }
