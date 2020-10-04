@@ -17,9 +17,10 @@ body {
 #sidebar-mobile-nav {
     width: 100%;
     background-color: #053D23;
-    height: 100vh;
+    /* height: 100vh; */
     display: none;
     position: absolute;
+    min-height: 125%;
 }
 .sidebar-header {
     position: relative;
@@ -160,5 +161,11 @@ input[type=text], select, textarea {
     }
     .content-container {
         padding: 60px 20px;
+    }
+    .self-photo-container {
+        width: 100%;
+    }
+    .self-photo {
+        width: 100%;
     }
   }
