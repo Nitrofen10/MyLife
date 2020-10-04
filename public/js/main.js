@@ -1,7 +1,6 @@
 const hamburgerIcon = document.getElementById("hamburgerIcon");
 const desktopNAV = document.getElementById("sidebar-desktop-nav");
 const mobileNav = document.getElementById("sidebar-mobile-nav");
-window.onresize = setHeight;
     
 function toggleMenu() {
     //check the src attribute
@@ -17,12 +16,4 @@ function toggleMenu() {
         hamburgerIcon.style.filter = "invert(0)";
         mobileNav.style.display = 'none';
     }
-}
-
-function setHeight() {
-    console.log('hit');
-    desktopNAV.style.height = "100%";
-    desktopNAV.style.height = "100vh";
-    mobileNav.style.height = "100%";
-    mobileNav.style.height = "100vh";
 }
