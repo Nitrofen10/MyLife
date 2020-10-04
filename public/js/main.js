@@ -4,9 +4,11 @@ const mobileNav = document.getElementById("sidebar-mobile-nav");
     
 function toggleMenu() {
     console.log(hamburgerIcon.src)
-    console.log('http://' + window.location.hostname + ':' +location.port + '/images/hamburgerIcon.png')
+    console.log('https://' + window.location.hostname + location.port + '/images/hamburgerIcon.png')
+    console.log(window.location.hostname);
+    console.log(window.location.pathname);
     //check the src attribute
-    if (hamburgerIcon.src == 'http://' + window.location.hostname + ':' +location.port + '/images/hamburgerIcon.png') {
+    if (hamburgerIcon.src == 'https://' + window.location.hostname + window.location.pathname + '/images/hamburgerIcon.png') {
         // replace the src of the image with an X image
         hamburgerIcon.src = 'images/Xicon.png';
         hamburgerIcon.style.filter = "invert(1)";
