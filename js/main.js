@@ -3,6 +3,8 @@ const desktopNAV = document.getElementById("sidebar-desktop-nav");
 const mobileNav = document.getElementById("sidebar-mobile-nav");
     
 function toggleMenu() {
+    console.log(hamburgerIcon.src)
+    console.log('http://' + window.location.hostname + ':' +location.port + '/images/hamburgerIcon.png')
     //check the src attribute
     if (hamburgerIcon.src == 'http://' + window.location.hostname + ':' +location.port + '/images/hamburgerIcon.png') {
         // replace the src of the image with an X image
