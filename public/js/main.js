@@ -4,7 +4,7 @@ const mobileNav = document.getElementById("sidebar-mobile-nav");
     
 function toggleMenu() {
     console.log(hamburgerIcon.src)
-    console.log('https://' + window.location.hostname + location.port + '/images/hamburgerIcon.png')
+    console.log('https://' + window.location.hostname + window.location.pathname + '/images/hamburgerIcon.png')
     console.log(window.location.hostname);
     console.log(window.location.pathname);
     //check the src attribute
