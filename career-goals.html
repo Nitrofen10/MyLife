@@ -9,8 +9,35 @@
 <body>
     <!-- body container-->
     <div class="body-container">
-        <!-- Sideba rcontainer-->
-        <nav class="sidebar-nav">
+        <!-- Hamburger icon -->
+        <img src="images/hamburgerIcon.png" alt="Menu Icon" id="hamburgerIcon" onclick="toggleMenu()">
+
+        <!-- Sidebar Desktop container-->
+        <nav id="sidebar-desktop-nav">
+            
+            <!-- Sidebar header image-->
+            <div class="sidebar-header">
+                <!-- my headshot image-->
+                <div class="headshot-image">
+                    <img class="headshot"src="images/me.jpg" alt="My Picture">
+                    <div class="my-name">Severian Kissire</div>
+                </div>
+            </div>
+            <!-- my headshot image-->
+            <div class="sidebar-navigation-links">
+                <ul class="nav-links">
+                    <a class="nav-link" href="https://nitrofen10.github.io/MyLife/"><li>Home</li></a>
+                    <a class="nav-link" href="personal-life.html"><li>Personal Life</li></a>
+                    <a class="nav-link" href="professional-life.html"><li>Professional Life</li></a>
+                    <a class="nav-link" href="career-goals.html"><li>Career Goals</li></a>
+                    <a class="nav-link" href="contact.html"><li>Contact</li></a>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Sidebar Mobil;e container-->
+        <nav id="sidebar-mobile-nav">
+            
             <!-- Sidebar header image-->
             <div class="sidebar-header">
                 <!-- my headshot image-->
@@ -50,4 +77,5 @@
     </div>
     
 </body>
+<script src="js/main.js"></script>
 </html>
