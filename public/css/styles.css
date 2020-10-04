@@ -1,14 +1,25 @@
+html {
+    height: 100%;
+}
 body {
     background-color: #efefef;
-    margin: 0px
+    margin: 0px;
+    min-height: 100%;
 }
 .body-container {
     display: flex;
 }
-.sidebar-nav {
+#sidebar-desktop-nav {
     width: 33%;
     background-color: #053D23;
+    min-height: 100vh;
+}
+#sidebar-mobile-nav {
+    width: 100%;
+    background-color: #053D23;
     height: 100vh;
+    display: none;
+    position: absolute;
 }
 .sidebar-header {
     position: relative;
@@ -74,6 +85,7 @@ body {
     padding: 20px 40px;
     width: 100%;
     background-color: #fff;
+    min-height: 100vh;
 }
 .page-title {
     color: #053D;
@@ -127,4 +139,25 @@ input[type=text], select, textarea {
   
   input[type=submit]:hover {
     background-color: #05311d;
+  }
+  #hamburgerIcon {
+      display: none;
+  }
+
+  /* Mobile Responsive  */
+  @media (max-width: 667px) {
+    #sidebar-desktop-nav {
+        display: none;
+    }
+    #hamburgerIcon {
+        display: block;
+        top: 33px;
+        right: 37px;
+        width: 31px;
+        position: absolute;
+        z-index: 100;
+    }
+    .content-container {
+        padding: 60px 20px;
+    }
   }
